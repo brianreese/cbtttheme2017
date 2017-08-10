@@ -6,13 +6,14 @@ body {
 
 
 
-
+/* @todo: Ensure removing this doesn't cause regressions elsewhere */
 .widget_pager.widget_pager_top.views_slideshow_pager_field.views-slideshow-pager-field-processed{
-      margin-top: -330px;
+      /*margin-top: -330px;*/
 }
 
 
 /*hide the numbers from the slider icons*/
+/* @todo: remove all of this in favor of css-based pager styling.
 #views_slideshow_pager_field_item_top_slideshow-block_1_0 .views-field-counter{
    visibility: hidden;
 }
@@ -83,7 +84,63 @@ body {
     top: 383px;
     z-index: 999;
 }
+*/
 
+#block-views-block-slideshow-block-1 .views_slideshow_controls_text {
+  /* @todo: determine if these should be removed from template completely */
+  visibility: hidden;
+}
+
+#block-views-block-slideshow-block-1 .views_slideshow_pager_field {
+  position: absolute;
+  bottom: 0;
+  z-index: 10;
+  width: 100%;
+  text-align: center;
+}
+
+#block-views-block-slideshow-block-1 .views_slideshow_pager_field_item {
+  display: inline-block;
+  opacity: 0.5;
+  margin-left: 20px;
+  cursor: pointer;
+}
+
+#block-views-block-slideshow-block-1 .views_slideshow_pager_field_item:first-child {
+  margin-left: 0;
+}
+
+#block-views-block-slideshow-block-1 .views_slideshow_pager_field_item.active {
+  opacity: 0.9;
+}
+
+#block-views-block-slideshow-block-1 .views-content-counter {
+  color: white;
+  text-align: center;
+  font-size: 40px;
+  padding: .5em;
+  position: relative;
+}
+
+
+#block-views-block-slideshow-block-1 .views-content-counter:before {
+  content: '';
+  display: block;
+  position: absolute;
+  z-index: -1;
+  width: 60px;
+  height: 60px;
+  border: 3px solid white;
+  border-radius: 100%;
+  top: 50%;
+  left: 50%;
+  transform: translateY(-50%) translateX(-50%);
+}
+
+#block-views-block-slideshow-block-1 .views_slideshow_pager_field_item.active .views-content-counter::before {
+  background-color: #891f52;
+  opacity: .5;
+}
 
 /*color for latest news*/ 
 #block-views-block-latest-news-block-1 .views-row:nth-child(1) .latest_news_body_a{
