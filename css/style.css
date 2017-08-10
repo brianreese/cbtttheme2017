@@ -86,6 +86,10 @@ body {
 }
 */
 
+#block-views-block-slideshow-block-1{
+  position: relative;
+}
+
 #block-views-block-slideshow-block-1 .views_slideshow_controls_text {
   /* @todo: determine if these should be removed from template completely */
   visibility: hidden;
