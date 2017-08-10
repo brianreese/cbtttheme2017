@@ -1,0 +1,55 @@
+<?php
+
+/**
+ * @file
+ * Functions to support theming in the cbtttheme2017 theme.
+ */
+
+
+
+function cbtttheme2017_preprocess_page(array &$variables) {
+  $attachments['#attached']['library'][] = 'cbtttheme2017/main';
+  drupal_render($libraries);
+}
+
+
+/**
+ * Implements hook_form_alter().
+ */
+function cbtttheme2017_form_alter(&$form, $form_state, $form_id) {
+  if ( $form['#id'] == 'search-block-form' ) {
+    unset($form['actions']['submit']);
+
+  }
+
+  
+if ( $form['#id'] == 'views-exposed-form-latest-news-page-1' ) {
+    $form['actions']['submit']['#value'] = t('Search News');
+
+  }
+
+if ( $form['#id'] == 'views-exposed-form-speeches-page-1' ) {
+    $form['actions']['submit']['#value'] = t('Search Speeches');
+
+  }
+
+
+
+}
+
+
+/**
+ * Implements hook_process_page().
+ */
+function cbtttheme2017_process_page(&$var) {
+ $is_front = $var['is_front'];
+  if($is_front) {
+    $node = menu_get_object();
+    if(!$node) {
+      $var['title'] = '';
+      unset($var['page']['content']['system_main']['default_message']);
+    }
+  }
+  return;
+}
+

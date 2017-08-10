@@ -1,0 +1,20 @@
+{#
+/**
+ * @file
+ * Theme override to display a region.
+ *
+ * Available variables:
+ * - content: The content for this region, typically blocks.
+ * - attributes: HTML attributes for the region div.
+ * - region: The name of the region variable as defined in the theme's
+ *   .info.yml file.
+ *
+ * @see template_preprocess_region()
+ */
+#}
+{% if content %}
+  <div{{ attributes }}>
+    {{ content }}
+  <h4><a href='http://www.cbttwebdrupal8.dreamhosters.com/news-centre/latest-news'>VIEW ALL</a></h4>
+  </div>
+{% endif %}

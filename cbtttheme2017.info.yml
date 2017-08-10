@@ -1,0 +1,37 @@
+name: cbtttheme2017
+description: CBTT website Drupal 8 theme
+type: theme
+core: 8.x
+package: custom
+
+libraries:
+ - cbtttheme2017/global-css
+ - cbtttheme2017/global-js
+ - libraries/slick/slick
+
+libraries-override:
+ system/base:  false
+
+regions:
+    header: 'Header'
+    main_navigation: 'Main Navigation'
+    search: 'Search'
+    slideshow: 'Slideshow'
+    content: 'Content'
+    left_content: 'Left Content'
+    latest_news: 'Latest News'
+    treasury_bills: 'Treasury Bills'
+    quick_links: 'Quick Links'
+    featured_links: 'Featured Links'
+    latest_videos: 'Latest Videos'
+    right_content: 'Right Content'
+    exchange_rates: 'Exchange Rates'
+    interest_rates: 'Interest Rates'
+    inflation_rates: 'Inflation Rates'
+    repo_mmrr_rates: 'Repo MMRR Rates'
+    recent_publications: 'Recent Publications'
+    related_websites: 'Related Websites'
+    login_area: 'Login Area'
+    breadcrumbs: 'Breadcrumbs'
+    left_side_bar: 'Left Side Bar'
+    footer: 'Footer'
