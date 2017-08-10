@@ -45,7 +45,7 @@
  * @ingroup themeable
  */
 #}
-{{  kint(page) }}
+{{  kint(page.content['#items'].getValue()) }}
 <header>
 
 	<div class="container">
@@ -67,10 +67,10 @@
 				<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
 					<div class="wrap">
 						<div class="aboveSearch">
-							<a href="/news-centre/about-notes-and-coins">Currency</a>
-							<a href="/news-centre/auditorium">Auditorium</a>
-							<a href="/news-centre/about-museum">Museum & Art</a>
-							<a href="#">Contact Us</a>
+							<a href="/add_contact.php">Currency</a>
+							<a href="/add_contact.php">Auditorium</a>
+							<a href="/add_contact.php">Museum & Art</a>
+							<a href="/add_contact.php">Contact Us</a>
 						</div>
 
 						<!-- searchbar  -->
@@ -80,9 +80,9 @@
 						<!-- items below searchbar  -->
 
 						<div class = "belowSearch">
-							<a href="/sitemap.xml">Site Map</a>
-							<a href="#">Feedback</a>
-							<a href="#">FAQ's</a>
+							<a href="/add_contact.php">Site Map</a>
+							<a href="/add_contact.php">Feedback</a>
+							<a href="/add_contact.php">FAQ's</a>
 						</div>
 					</div>
 				</div>
@@ -90,10 +90,21 @@
 			</div>
 
 			<!-- ====================== navbar ================================= -->
+			<div class="row">
 				{{  page.main_navigation  }}
+			</div>
 			<!-- ====================== Navbar ================================= -->
 		</div>
+
+
 	</div>
+
+
+
+</div>
+
+
+
 </header>
 
 
@@ -106,12 +117,10 @@
 		<div class="row">
 				<div class = "placeHolderImage">
 					{{  page.slideshow }}
-			 		<img src="../themes/custom/cbtttheme2017/images/_05_color_band_belolw_slide_show.gif" alt="slideshow under image" />
+			  <img src="../themes/custom/cbtttheme2017/images/_05_color_band_belolw_slide_show.gif" alt="slideshow under image" />
 				</div>
 			
 		</div>
-
-
 		<div class="row">
 			<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
 				<div class = "placeHolderImage">
@@ -125,138 +134,46 @@
 
 
 
-
-
-
-	<div class="col-lg-1 col-md-1 col-sm-2 sidenav">
-	</div>
-
-
-	<!-- =============================================  MAIN ===================================================================== -->
-	<div class="col-lg-6 col-md-6 col-sm-8 text-left"> 
-		
-				<!-- =============================================  SECTION ======================================= -->
-					<div class="col-lg-11 col-md-12 col-sm-12 ">
-						<div class="latestNews">
-							<div id="latestNewsLine">
-								{{  page.latest_news  }}
-			
-								
-							</div>
- 								<div class="latestNewsViewAll">
-							 		<h4 ><a href="#">VIEW ALL</a></h4>
-								</div>
-									<hr>
-						</div>
-					</div>
-
-					<!-- =============================================  SECTION ======================================= -->
-					<div class="col-lg-11 col-md-12 col-sm-12 ">
-					
-						<div class="treasuryBillAuction">
-							
-								{{  page.treasury_bills }}
-							<div class="treasuryBillAuctionViewAll">
-							 	<h4 ><a href="#">VIEW ALL</a></h4>
-							</div>
-							<br>
-							<img src="../themes/custom/cbtttheme2017/images/Website-slices_52 Government Securities.gif" />
-							<br>
-								<hr>
-				
-						</div>
-
-					</div>
-					<!-- =============================================  SECTION ======================================= -->
-					<div class="col-lg-11 col-md-12 col-sm-12 ">
-						<div class="quickLinks">
-							{{  page.quick_links  }}
-						</div>
-				<hr>
-					</div>
-					<!-- =============================================  SECTION ======================================= -->
-					<div class="col-lg-11 col-md-12 col-sm-12 ">
-						<div class="featuredLinks">
-								{{  page.featured_links  }}
-						</div>
-						<hr>
-					</div>
-				
-					<!-- =============================================  SECTION ======================================= -->
-					<div class="col-lg-6 col-md-12 col-sm-12 ">
-						<div class="latestVideos">
-
-							
-								<h2> LATEST VIDEOS</h2>
-								{{  page.latest_videos  }} 
-							
-							
-						</div>
-					</div>
-
-
-					<div class="col-lg-6 col-md-12 col-sm-12 ">
-						<div class="chartPack">
-							
-								<h2> CHART PACK</h2>
-								<img src="../themes/custom/cbtttheme2017/images/chart.gif"> 
-							
-						</div>
-					</div>
-
-					<!-- =============================================  SECTION ======================================= -->
-	</div>
-	<!-- =============================================  MAIN ===================================================================== -->
-
-
-
-	<!-- =================================================================== SIDEBAR ================================================================================= -->
-	<div class="col-lg-3 col-md-5 col-sm-12 sidenav">
-
-		<div class="well">
-			{{  page.exchange_rates  }} 
-		</div>
-
-		<div class="well">
-			{{  page.interest_rates  }} 
-		</div>
-
-		<div class="well">
-			{{  page.inflation_rates  }}
-		</div>
-
-		<div class="well">
-			<h2>INFLATION CALCULATOR</h2>
-		</div>
-
-		<div class="well well-lg">
-			{{  page.repo_mmrr_rates  }}
-		</div>
-			
-		<div class="well">
-			<div class="capitalize">
-				{{  page.recent_publications  }}				
-			</div>
-		</div>
-
-		<div class="well">
-			{{  page.related_websites  }}
-		</div>
-	</div>
+<div class="container-fluid text-center">    
+  <div class="row content">
 
 
 
 
 
-	<a href="#0" class="cd-top">Top</a>
-	<!-- =================================================================== END SIDEBAR ================================================================================= -->
 
-	
-	<!-- ================================ ICON ROW =========================================== -->
+
+
+  	<div class="sideBar">
+	  	<div class="col-lg-4 col-md-4 col-sm-4 sidenav text-center">
+	  			<p><a href="#">Link</a></p>
+	  			<p><a href="#">Link</a></p>
+	  			<p><a href="#">Link</a></p>
+	  		</div>
+	  	</div>
+
+
+
+
+
+
+
+	    <div class="col-lg-5 col-md-8 col-sm-8 text-left "> 
+	<h1>LOGIN PAGE	</h1>
+	      {{  page.login_area  }}
+              {{  page.content  }}
+	    </div>
+</div>
+</div>
+
+    <div class="col-lg-2  sidenav">
+    </div>
+  </div>
+<!-- ================================ ICON ROW =========================================== -->
 	
 	<div class="container-fluid text-center">
 		<div class="row">
-			<div class="col-lg-12 col-md-12 col-sm-12 shareicons">
+			<div class="col-lg-12 shareicons">
 				<p><a href="https://www.youtube.com/channel/UCEPyscWLq-mtBk8Jf3Yjklg"><img src="../themes/custom/cbtttheme2017/images/footer_icons/youtube.svg" alt="youtube logo" /></a>
 				   <a href="#"><img src="../themes/custom/cbtttheme2017/images/footer_icons/rss.svg" alt="rss logo"></a>
 				   <a href="#"><img src="../themes/custom/cbtttheme2017/images/footer_icons/envelope.svg" alt="email logo"></a>
@@ -269,7 +186,7 @@
 
 	<!-- ================================ FOOTER =========================================== -->
 	<footer class="container-fluid text-center">
-		
+		<div class="container-fluid">
 			<div class="row">
 				<div class="col-lg-2">
 					<p></p>
@@ -285,6 +202,6 @@
 				</div>
 
 			</div>
-		
+		</div>
 	</footer>
 	<!-- ================================ FOOTER =========================================== -->

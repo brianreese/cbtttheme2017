@@ -5,6 +5,7 @@ global-css:
      css/style.css: {}
      css/stellarnav.min.css: {}
      'https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css': {type: external}
+     'https://cdn.datatables.net/1.10.15/css/dataTables.bootstrap.min.css': {type: external}
      'https://www.w3schools.com/w3css/4/w3.css': {type: external}
      'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css': {type: external}
      'https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css': {type: external}
@@ -12,15 +13,19 @@ global-css:
 
 global-js:
   js:
+    'https://code.jquery.com/jquery-1.12.4.js': { type: external,  minified: true }
     'https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js': { type: external,  minified: true }
     'https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js': { type: external,  minified: true }
+    'https://cdn.datatables.net/1.10.15/js/jquery.dataTables.min.js': { type: external,  minified: true }
+    'https://cdn.datatables.net/1.10.15/js/dataTables.bootstrap.min.js': { type: external,  minified: true }
     js/stellarnav.min.js: {}
     js/menuDropdown.js: {} 
-    js/main.js: {} 
+    js/main.js: {}
+    js/offCanvas.js: {}
+    js/cbttNav.js: {}
   dependencies:
     - core/jquery
     - core/jquery.ui.datepicker
     - core/drupal
-    - core/drupalSettings
-    - core/jquery.once
+
 

@@ -51,7 +51,14 @@
       {{ 'Skip to main content'|t }}
     </a>
     {{ page_top }}
+       <script type="text/javascript">
+      jQuery(document).ready(function ($) {
+      jQuery('[data-toggle="offcanvas"]').click(function () {
+        jQuery('.row-offcanvas').toggleClass('active')
+      });
+    });
 
+  </script>
     {{ page }}
     {{ page_bottom }}
     <js-bottom-placeholder token="{{ placeholder_token }}">

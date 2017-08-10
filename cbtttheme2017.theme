@@ -7,10 +7,6 @@
 
 
 
-function cbtttheme2017_preprocess_page(array &$variables) {
-  $attachments['#attached']['library'][] = 'cbtttheme2017/main';
-  drupal_render($libraries);
-}
 
 
 /**

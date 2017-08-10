@@ -52,6 +52,42 @@
 <header>
   <div class="container">
 
+  <script>
+  (function ($) { 
+  		jQuery(document).ready(function($) {
+  			jQuery('.stellarnav').stellarNav({
+  				theme: 'light'
+  			});
+  		});
+  })(jQuery);
+
+
+
+
+  </script>
+
+
+
+
+
+
+
+  <script>
+        (function ($) {
+
+          Drupal.behaviors.exampleModule = {
+            attach: function (context, settings) {
+           $('#example').DataTable();
+              };
+            }
+          };
+
+        })(jQuery);
+  </script>
+
+
+
+
     <div class="PurpleTop">
 
       <div class="row">
@@ -69,10 +105,10 @@
         <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
           <div class="wrap">
             <div class="aboveSearch">
-              <a href="/add_contact.php">Currency</a>
-              <a href="/add_contact.php">Auditorium</a>
-              <a href="/add_contact.php">Museum & Art</a>
-              <a href="/add_contact.php">Contact Us</a>
+              <a href="/news-centre/about-notes-and-coins">Currency</a>
+              <a href="/news-centre/auditorium">Auditorium</a>
+              <a href="/news-centre/about-museum">Museum & Art</a>
+              <a href="#">Contact Us</a>
             </div>
 
             <!-- searchbar  -->
@@ -84,9 +120,9 @@
             <!-- items below searchbar  -->
 
             <div class = "belowSearch">
-              <a href="/add_contact.php">Site Map</a>
-              <a href="/add_contact.php">Feedback</a>
-              <a href="/add_contact.php">FAQ's</a>
+              <a href="#">Site Map</a>
+              <a href="#">Feedback</a>
+              <a href="#">FAQ's</a>
             </div>
           </div>
         </div>
