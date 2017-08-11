@@ -13,16 +13,14 @@ global-css:
 
 global-js:
   js:
-    'https://code.jquery.com/jquery-1.12.4.js': { type: external,  minified: true }
-    'https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js': { type: external,  minified: true }
     'https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js': { type: external,  minified: true }
-    'https://cdn.datatables.net/1.10.15/js/jquery.dataTables.min.js': { type: external,  minified: true }
-    'https://cdn.datatables.net/1.10.15/js/dataTables.bootstrap.min.js': { type: external,  minified: true }
+    'https://cdn.datatables.net/v/bs/jq-2.2.4/dt-1.10.15/r-2.1.1/datatables.min.js': { type: external,  minified: true }
     js/stellarnav.min.js: {}
     js/menuDropdown.js: {} 
     js/main.js: {}
     js/offCanvas.js: {}
     js/cbttNav.js: {}
+    js/cbttDataTable.js: {}
   dependencies:
     - core/jquery
     - core/jquery.ui.datepicker
