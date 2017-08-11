@@ -3,7 +3,97 @@ body {
   overflow-x: hidden; /* Prevent scroll on narrow devices */
 }
 
+/*speeches styling*/
+.division_main{
+    border: 5px double #ffffff;
+    padding:10px;
+    margin:10px;
+    color:white;
+    background-color:rgb(137, 31, 82);
+}
 
+.division_b h2 :hover{
+color:#121212;
+font-size:
+}
+
+
+
+/*latest news search form styling*/
+
+#views-exposed-form-latest-news-page-1 #edit-keys{
+
+  width: 300px;
+  margin:5px;
+}
+
+#views-exposed-form-latest-news-page-1 label{
+  width: 160px;
+  margin:5px;
+}
+
+#views-exposed-form-latest-news-page-1 #edit-submit-latest-news{
+    background-color: #891f52; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+/*treasury bill auction styling*/
+#views-exposed-form-gov-securities-treasury-bill-auctions-page-2 #edit-field-issue-no-value, #edit-field-issue-date-value, #edit-field-maturity-date-value, #edit-field-auction-closing-date-value{
+
+   width: 300px;
+  margin:5px;
+}
+
+#views-exposed-form-gov-securities-treasury-bill-auctions-page-2 label{
+    width: 180px;
+  margin:5px;
+}
+
+#views-exposed-form-gov-securities-treasury-bill-auctions-page-2 #edit-submit-gov-securities-treasury-bill-auctions{
+      border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+
+/*speeches form styling*/
+#views-exposed-form-speeches-page-1 #edit-keys, #edit-field-speech-date-value, #edit-field-speech-date-value-1{
+
+  width: 300px;
+  margin:5px;
+
+}
+
+#views-exposed-form-speeches-page-1 label{
+  width: 160px;
+  margin:5px;
+}
+#views-exposed-form-speeches-page-1 #edit-submit-speeches{
+    background-color: #891f52; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
 
 
 /* @todo: Ensure removing this doesn't cause regressions elsewhere */
@@ -146,7 +236,7 @@ body {
   opacity: .5;
 }
 
-/*color for latest news*/ 
+/*color for latest news*/
 #block-views-block-latest-news-block-1 .views-row:nth-child(1) .latest_news_body_a{
   color:#a5d0cc;
 }
@@ -205,25 +295,25 @@ border-bottom: 6px solid #ffe595;
 }
 
 h2.left_blocks_heading{
-  color:#888888; 
+  color:#888888;
   text-align:center;
   padding-top:10px;
 }
-     
+
 h4.tbill-bold{
 
 font-weight: bold;
 
 }
 
-.treasuryBillAuction.sexy_line{ 
+.treasuryBillAuction.sexy_line{
     display:block;
     border:none;
     color:white;
     height:20px;
     background:black;
     background: -webkit-gradient(radial, 50% 50%, 0, 50% 50%, 350, from(#FBD283), to(#fff));
-} 
+}
 
 
 .float_left{
@@ -312,7 +402,7 @@ font-weight: bold;
           width: 130% !important;
         margin: auto;
             font-size: 15px;
-              
+
         margin-left: -70px;
       }
     .belowSearch {
@@ -321,7 +411,7 @@ font-weight: bold;
         margin: auto;
             font-size: 16px;
             text-align: center;
-      } 
+      }
 }
 
 
@@ -340,7 +430,7 @@ font-weight: bold;
     .belowSearch {
 
        width: 100%;
-       
+
             font-size: 16px;
             text-align: center;
       }
@@ -369,7 +459,7 @@ font-weight: bold;
         margin: auto;
             font-size: 13px;
             text-align: center;
-      } 
+      }
 }
 
 
@@ -447,7 +537,7 @@ font-weight: bold;
 
 .latestNewsViewAll {
     padding-top: 10px;
-    margin-left: 100px; 
+    margin-left: 100px;
 }
 .cols-6.table{
       font-size: 10px;
@@ -571,7 +661,7 @@ background-color:#fff; font-weight:bold;font-size:0.9em;
 
 
 div.division_main{
-	float:left;clear:both;vertical-align:top;margin-top:20px;margin-bottom:30px;	
+	float:left;clear:both;vertical-align:top;margin-top:20px;margin-bottom:30px;
 }
 
 div.division_a{
@@ -611,7 +701,7 @@ color: red;
 #block-views-block-reports-tabs-block-1 a:hover{
    color:#057096;
     background-color:#ecebeb;
-    
+
 }
 .well h2{
   color:#057096;
@@ -669,7 +759,7 @@ color: red;
 }
 
 #block-repoandmmrrrates p:nth-of-type(4) {
-  
+
     color: white;
    margin-left: 20px;
     margin-top: -10px;
@@ -696,7 +786,7 @@ color: red;
 }
 
 #block-repoandmmrrrates p:nth-of-type(9) {
-  
+
     color: white;
    margin-left: 20px;
     margin-top: -10px;
@@ -712,16 +802,16 @@ font-weight: 600;
 }
 
 
-   
+
 
 /*========================================== END REPO AND MMR ===============================*/
 
 
  .bordernone { border-collapse:separate; border-spacing:4px;cell-padding:3px;cell-spacing:3px;width:100%;}
         .borderless_tr { border:0px; }
-       .currency_name { font-family:Impact;font-size:1.7em;font-weight:bold; } 
+       .currency_name { font-family:Impact;font-size:1.7em;font-weight:bold; }
         .exchange_bg { background-color:#E2E7E9;color:#898989;padding:0px;border:0px;}
-     
+
 
 /*searchbar and icon*/
 i.better_search {
@@ -845,10 +935,10 @@ footer {
          -o-transition: all .25s ease-out;
             transition: all .25s ease-out;
   }
-  
+
   .sidebar-offcanvas {
     position: absolute;
-   
+
     display: none;
   }
 
@@ -858,14 +948,14 @@ footer {
 
   .row-offcanvas-right.active
   .sidebar-offcanvas {
-    display: block;  
+    display: block;
     right: 0;
     top: 0;
     z-index: 1;
   }
 
   .row-offcanvas-right.active {
-    
+
   }
   #sidebar{
         width: 260px;
@@ -1158,7 +1248,7 @@ background-color: white;
   border: 0;
 }
 .panels-group {
-  
+
 }
 .panels-group .panels {
   margin-bottom: 0;
@@ -1320,7 +1410,7 @@ button.accordion.active:after {
 .belowSearch a{
       color: white;
     padding-left: 10px;
-    padding-right: 10px;  
+    padding-right: 10px;
 
 }
 
@@ -1357,17 +1447,17 @@ button.accordion.active:after {
 }
 
 .accordion > a{
-    
+
     padding-top: 10px;
     padding-right: 15px;
     padding-bottom: 10px;
-   
+
 
 }
 .accordion > nav{
     background-color: red;
   display: none;
-   
+
 }
 
 .accordianInnerItems a {
@@ -1388,7 +1478,7 @@ button.accordion {
 }
 
 button.accordion.active, button.accordion:hover {
-    background-color: #569886; 
+    background-color: #569886;
 }
 
 div.panels {
@@ -1518,7 +1608,7 @@ nav > ul > li {
           padding: 10px 20px 10px 50px;
 }
 nav a {
- /* display: block; 
+ /* display: block;
   padding: 10px 15px;
   color: #000000;
   text-decoration: none;*/
@@ -1539,7 +1629,7 @@ nav > ul ul a:hover {
 
 /* Sharing Icons */
 .shareicons p a img {
-  display: block inline; 
+  display: block inline;
   height: 50px;
       width: 50px;
    text-align: center;
@@ -1696,7 +1786,7 @@ p.currency_name{
 /* REPO RATE FLAG HOMEPAGE */
 .sidenav.flag_repo_rate p{
   color: #000000;
-  
+
 
 }
 
@@ -1713,7 +1803,7 @@ p.currency_name{
 
              .navbar-nav li{
               display: inline-block;
-              float:none; 
+              float:none;
 
              }
 
@@ -1750,7 +1840,7 @@ p.currency_name{
 
               .row-offcanvas-right.active
               .sidebar-offcanvas {
-                display: block;  
+                display: block;
                 right: 0;
                 top: 0;
                 z-index: 1;
@@ -1832,7 +1922,7 @@ p.currency_name{
               width: 340px;
             }
 
-          
+
 
             .panels{
               background-color: green;
@@ -2190,7 +2280,7 @@ p.currency_name{
               content: "\2796"; /* Unicode character for "minus" sign (-) */
             }
 
-  
+
 
 
 
@@ -2213,6 +2303,3 @@ p.currency_name{
 	display: inline-block;
 
 }
-
-
-
