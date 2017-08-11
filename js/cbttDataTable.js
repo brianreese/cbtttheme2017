@@ -1,8 +1,7 @@
 (function ($) {
-
-  Drupal.behaviors.exampleModule = {
+  Drupal.behaviors.applyBootstrapDataTable = {
     attach: function (context, settings) {
-      $('#example').DataTable();
+      $('#example, .bootstrap-data-table-view table', context).DataTable();
     }
   }
 
